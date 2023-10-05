@@ -1,0 +1,10 @@
+.profile-section{
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.profile-section img{
+    width: 100%;
+}

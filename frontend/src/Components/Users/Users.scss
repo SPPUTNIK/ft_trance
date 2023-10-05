@@ -1,0 +1,157 @@
+
+
+.friendDiv{
+    // margin-left: 200px;
+    /* height: 999px; */
+    overflow-y: hidden;
+    // width: calc(100vw - 220px);
+    height: 100%;
+    // min-height: 100vh;
+}
+
+.friendDiv span{
+    color: #ffffff;
+}
+
+.data-tables{
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding-top: 9rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.headerTable span {
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.user-profile, .headerTable {
+    display: flex;
+    padding: 0.3rem 0;
+    overflow-x: auto;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    width: 99%;
+    border: 1px solid #ffffff26;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .headerTable{
+    // width: 90%;
+    border-collapse: collapse;
+    border: none;
+}
+.user-profile span {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.profil-img {
+    max-width: 40px ;
+    max-height: 40px;
+    overflow: hidden;
+}
+.profil-img img{
+    width: 100%;
+    border-radius: 4px;
+    height: auto;
+}
+
+.profil-id {
+    width: 8%;
+}
+
+.profil-nick {
+    width: 14%;
+}
+
+.profil-first {
+    width: 14%;
+}
+
+.profil-last {
+    width: 14%;
+}
+
+.profil-email {
+    width: 30%;
+}
+
+.icons {
+    width: 4%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: fit-content;
+  }
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffffed;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 0 !important;
+    box-shadow: 0px 0px 3px 1px rgb(255 0 0 / 52%);
+    
+  }
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: .2rem;
+    bottom: .2rem;
+    background-color: #000;;
+    transition: .4s;
+}
+  
+.switch input:checked + .slider{
+    background-color:#a00a0b;
+    box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.42);
+}
+  
+.switch input:checked + .slider:before{
+    background-color:#ffffff;
+}
+
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(2.7rem);
+  }
+  
+  .slider {
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    border-radius: 50%;
+  }
+
+  .headerTable .profil-email{
+    width: 26%;
+  }

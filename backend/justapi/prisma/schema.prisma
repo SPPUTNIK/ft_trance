@@ -1,0 +1,112 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                            String         @id @unique
+  username                      String         @unique
+  email                         String
+  avatar                        String?
+  twofa                         Boolean        @default(false)
+  addUser                       String?
+  grade                         String         @default("a")
+  point                         Int            @default(0)
+  friends                       Friend[]
+  blocks                        Block[]
+  blocklist                     String[]
+  Cmessages                     ChatMessage[]
+  dms                           Int[]
+  rooms                         Int[]
+  signup                        Boolean        @default(false)
+  twoFactorAuthenticationSecret String?
+  is2FAEnabled                  Boolean        @default(false)
+  socketId                      String?
+  inGame                        Boolean        @default(false)
+  gameinfo                      Gameinfo[]
+  roomId                        String?
+  notifications                 Notification[]
+  online                        Boolean        @default(false)
+  lose                          Int            @default(0)
+  won                           Int            @default(0)
+  cancel                        Int            @default(0)
+}
+
+model Notification {
+  id           Int    @id @unique @default(autoincrement())
+  myid         String
+  notification User   @relation(fields: [myid], references: [id])
+  name         String
+  playerid     String
+  avatar       String
+}
+
+model Gameinfo {
+  id            Int    @id @unique @default(autoincrement())
+  myid          String
+  player2id     String
+  player2name   String
+  player2avatar String
+  game          User   @relation(fields: [myid], references: [id])
+  lose          Int
+  won           Int
+  myscore       String
+  player2score  String
+}
+
+model Friend {
+  Id       String @id @unique
+  //message   String
+  userid   String
+  user     String
+  //matches   String
+  friende  User   @relation(fields: [friendId], references: [id])
+  friendId String
+}
+
+model Block {
+  Id      String @id @unique
+  userid  String
+  user    String
+  Blocke  User   @relation(fields: [blockid], references: [id])
+  blockid String
+}
+
+model Member {
+  id       Int       @id @default(autoincrement())
+  memberId String
+  muted    Boolean
+  admin    Boolean
+  owner    Boolean
+  room     ChatRoom? @relation(fields: [roomId], references: [id])
+  roomId   Int?
+}
+
+model ChatRoom {
+  id         Int           @id @default(autoincrement())
+  owner      String
+  roomName   String        @unique
+  type       String
+  password   String
+  members    Member[]
+  mems       String[]
+  messages   ChatMessage[]
+  blockList  String[]
+  isitgroup  Boolean
+  lastUpdate DateTime      @default(now())
+}
+
+model ChatMessage {
+  id       Int      @id @default(autoincrement())
+  senderId String
+  //chatMessId   Int     @default(autoincrement()) 
+  roomid   Int
+  user     User     @relation(fields: [senderId], references: [id])
+  message  String
+  time     DateTime @default(now())
+  room     ChatRoom @relation(fields: [roomid], references: [id])
+}

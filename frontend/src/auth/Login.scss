@@ -1,0 +1,107 @@
+.LoginPage {
+    position: relative;
+    // height: 100vh;
+    // max-width: 1440px;
+
+    height: 800px;
+    width: 45%;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+
+    .LoginPage-Content {
+        position: absolute;
+        top: 25%;
+        min-height: 380px;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+
+        .bg-img {
+            background: linear-gradient(227deg, #BC56A9 0%, #9965B9 39.16%, #3D8EE4 112.9%);
+            width: 320px;
+            height: 500px;
+            border-radius: 45px;
+            box-shadow: 2px 0px 100px -40px black;
+        }
+
+        .bg-img img {
+            z-index: 5;
+            position: relative;
+        }
+
+        .section-login-btn {
+            position: absolute;
+            left: 30%;
+            z-index: 4;
+        }
+
+        .section-login-btn .scop-btn-login{
+            display: flex;
+            width: 550px;
+            padding: 15px;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            border-radius: 45px;
+            box-shadow: 2px 0px 100px -40px black;
+            backdrop-filter: blur(200px);
+            .img-racite{
+                position: absolute;
+                z-index: 0;
+                left: -46%;
+                right: 0%;
+                bottom: -49%;
+            }
+        }
+
+        .title-SignIn {
+            text-shadow: -6px 4px 2px rgba(0, 0, 0, 0.25);
+            font-size: 72px;
+            font-weight: 700;
+        }
+
+        .text-signin {
+            text-shadow: -2px 2px 14px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-size: 26px;
+            font-weight: 400;
+            z-index: 3;
+        }
+
+        .btn-auth {
+            z-index: 2;
+            width: max-content;
+            padding: 10px 20px;
+            font-size: 32px;
+            background: linear-gradient(0deg, rgba(103, 124, 254, 1) 0%, rgba(88, 111, 254, 1) 50%, rgba(103, 124, 254, 1) 100%);
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 2px 0px 50px -18px black;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .LoginPage{
+        justify-content: center;
+        .bg-img, .img-racite{
+            display: none;
+        }
+    }
+    .LoginPage .LoginPage-Content{
+        width: 100%;
+        display: block;
+        
+        .section-login-btn {
+            position: relative;
+            right: 0;
+        left: 0;
+        }
+        .scop-btn-login{
+            margin: auto;
+        }
+    }
+}

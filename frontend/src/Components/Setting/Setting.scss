@@ -1,0 +1,113 @@
+.img-edit{
+  background-image: url(/assets/img/settingImg.png);
+  opacity: 25%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin: auto;
+  height: 300px;
+  background-position-x: center;
+  margin-top: 50px;
+}
+
+// .setting{
+//   width: 70%;
+// }
+
+.setting {
+
+  border: 0px solid rgba(255, 255, 255, 0.0901960784);
+  box-shadow: 0 0 4em 16px rgb(0 0 0);
+  position: relative;
+  bottom: 23rem;
+  border-radius: 10px;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+
+  .title {
+    position: relative;
+    text-align: center;
+    padding: 2rem 0 0 0;
+  }
+
+  .input-username {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+
+    label {
+      font-weight: 800;
+      text-align: center;
+      width: 100%;
+  }
+
+  }
+  
+  .gapping{
+    gap: 1rem;
+  }
+
+  .input-username::placeholder{
+    color: #0000005c;
+  }
+
+  .btn-warning{
+    // cursor: pointer;
+    position: relative;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    border-radius: 6px;
+    border: 0;
+    display: flex;
+    gap: 0.5rem;
+    color: #e4f2ff;
+    background-color: #3490ff;
+  }
+  .btn-warning input[type="file"]{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    width: 132px;
+    top: 0;
+    opacity: 0;
+  }
+
+  .img-profile {
+    border-radius: 10px;
+    max-width: 200px;
+    max-height: 200px;
+    overflow-y: hidden;
+
+    .img {
+      width: 100%;
+    }
+  }
+  .btn-icon{
+      padding: 0 24px;
+      margin: 0px 5px;
+      cursor: pointer;
+      font-size: 28px;
+
+
+  }
+  .confirm-click{
+    fill: #23ff98;
+  }
+
+  .skip-click{
+    fill: #e4f2ff;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .img-edit {
+    width: 90%;
+  }
+
+  .setting{
+    width: 90%;
+  }
+}

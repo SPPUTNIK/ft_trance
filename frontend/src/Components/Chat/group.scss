@@ -1,0 +1,103 @@
+.creatGroupcontainer,
+.joinGroupcontainer,
+.addNewMember {
+    padding: 14vh 4vh;
+
+    .group-update {
+        border-radius: 10px;
+        // border: 1px solid #535c62;
+        padding: 2vh;
+
+        // display: flex;
+        // flex-direction: column;
+        .input {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0px;
+
+            .txt-input, #typegroup {
+                padding: 10px;
+                background: none;
+                border: 1px solid #535c62;
+                border-radius: 2px;
+            }
+
+        }
+
+        .join-input {
+            // flex-direction: column;
+            // width: 100%;
+            display: grid;
+            grid-template-columns: auto 15%;
+            gap: 10px;
+        }
+
+        .listGroupJoin {
+            height: 30vh;
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .scop-group {
+                padding: 3px 10px;
+                display: flex;
+                // grid-template-columns: 1fr 1fr auto;
+                // align-items: center;
+
+                // .title-with-img {
+                //     display: flex;
+                //     align-items: center;
+                //     width: max-content;
+
+                //     .img-group-chat {
+                //         border-radius: 10px;
+                //         margin: 4px 0px;
+                //     }
+
+                //     h3 {
+                //         margin: 0px 5px;
+                //         font-size: 14px;
+                //     }
+                // }
+
+                .password-input {
+                    width: 60%;
+
+                    input {
+                        width: 80%;
+                    }
+                }
+
+            }
+        }
+
+        .btns-create-group {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+    }
+}
+
+.joinGroupcontainer,
+.addNewMember {
+    padding: 0vh 1vh;
+}
+
+@media (max-width: 768px) {
+    .chat-container {
+        .chat {
+
+            .creatGroupcontainer,
+            .joinGroupcontainer,
+            .addNewMember {
+                padding: 0vh;
+                margin: 0px 10px;
+            }
+        }
+    }
+}

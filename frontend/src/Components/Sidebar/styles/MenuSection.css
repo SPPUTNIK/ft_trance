@@ -1,0 +1,29 @@
+.menu-lists{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.menu-link{
+    padding: .7rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-link.active, .menu-link:hover{
+    background-color: #00000033;
+    box-shadow: 0px 0px 20px 2px black;
+    border-radius: .8rem;
+}
+
+.small-text{
+    color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+    .menu-link{
+    justify-content: center;
+    }
+    .app-sidebar .small-text {
+        display: none;
+    }
+}

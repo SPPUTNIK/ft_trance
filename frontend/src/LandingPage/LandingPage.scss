@@ -1,0 +1,423 @@
+.landing-page{
+    height: max-content;
+    // min-width: 1150px;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    margin: auto;
+    flex-direction: row;
+}
+
+.content-div{
+    display: flex;
+    row-gap: 1rem;
+    width: 90%;
+    height: max-content;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.hero-slide{
+    border-radius: 3rem;
+    background-color: #ffffff14;
+    display: flex;
+    // justify-content: flex-start;
+    // align-items: center;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    // bottom: 13rem;
+}
+
+.text-slid{
+    
+    height: 95%;
+    width: 50%;
+    display: flex;
+    font-family: monospace;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: flex-start;
+    padding: 0 3rem;
+
+    h1{
+        color: rgb(70 170 255);
+        font-weight: 800;
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+        color: #ddf1ff;
+    }
+
+    p{
+        width: 100%;
+        font-size: 1.2rem;
+        color: #d9e4fc;
+    }
+
+}   
+
+.btn-hero{
+    width: 12rem;
+    background: #dddddd42;
+    // background: linear-gradient(90deg, #3687FF 2.73%, rgba(181, 61, 255, 0.72) 37.26%, rgba(255, 22, 204, 0.47) 69.09%, rgba(255, 0, 46, 0.78) 100%);
+    height: 3rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.img-slid{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    .light-img{
+        position: absolute;
+        border: none;
+        border-radius: 9rem;
+    }
+
+    .zero{
+        width: 150px;
+        height: 150px;
+        top: 24rem;
+        right: 30rem;
+
+        background: linear-gradient(112deg, #0D141A -19.5%, rgb(1 138 255 / 23%) 75.1%);
+    }
+
+    .one{
+        width: 200px;
+        height: 200px;
+        top: 16rem;
+        right: 5rem;
+
+        background: linear-gradient(52deg, #0D141A -19.5%, rgb(1 149 255 / 49%) 75.1%);
+    }
+
+    .two{
+        width: 90px;
+        height: 90px;
+        left: 10rem;
+        top: 5rem;
+
+        background: linear-gradient(112deg, #0D141A -19.5%, rgb(1 138 255 / 23%) 75.1%);
+    }
+
+    .three{
+        width: 50px;
+        height: 50px;
+        top: 8rem;
+        right: 10rem;
+
+        background: linear-gradient(112deg, #0D141A -19.5%, rgb(1 138 255 / 23%) 75.1%);
+    }
+
+    .image{
+        height: 100%;
+        width: 100%;
+        background-image: url(/assets/img/zwalad.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 3rem;
+    }
+}
+
+.about-us{
+    h1{
+        // text-align: center;
+        padding: 1rem 3rem;
+        font-size: 3rem;
+    }
+
+    .slide-about{
+        border-radius: 3rem;
+        background-color: rgba(255, 255, 255, 0.0784313725);
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 600px;
+        position: relative;
+    }
+    .two{
+        left: 1rem;
+    }
+    .img-about{
+            height: 100%;
+            width: 100%;
+            background-image: url(/assets/img/aboutus.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 3rem;
+    }
+}
+
+.our-team{
+
+    display: flex;
+    width: 100%;
+    row-gap: 1rem;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+
+    h1{
+        padding: 0rem 3rem;
+        font-size: 3rem;
+    }
+    
+    h2{
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .team{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: max-content;
+        gap: 2.5rem;
+    }
+    .leader-profile{
+        width: 23%;
+        // box-shadow: 0px 8px 5px 0px rgb(0 0 0 / 25%);
+        background-color: rgb(197 197 197 / 23%);
+        backdrop-filter: blur(40px);
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.6rem;
+        padding: 1rem;
+
+
+        .box-image{
+            width: 140px;
+            height: 140px;
+            border-radius: 5rem;
+            background-image: url('/assets/img/kilwa.jpeg');
+            background-size: cover;
+        }
+
+        .contact-me{
+            width: 90%;
+            height: 50px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    height: 35px;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #00000059;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// @media only screen and (max-width: 400px){
+//     .landing-page{
+//         width: 100%;
+//     }
+// }
+
+// @media only screen and (max-width: 768px) {
+
+//     .landing-page{
+//         row-gap: 2rem;
+//         // padding: 0 3rem;
+//     }
+
+//     .text-slid{
+        
+//         // width: 50%;
+
+//         padding: 0px 1rem;
+//         align-items: center;
+
+//         h1{
+//             font-size: 1.6rem;
+//         }
+
+//         h2{
+//             font-size: 1.5rem;
+//             text-align: center;
+//         }
+
+//         p {
+//             width: 100%;
+//             font-size: .9rem;
+//             text-align: center;
+//         }
+
+//     }
+
+//     .img-slid{
+//         // width: 50%;
+//         z-index: 0;
+//         position: absolute;
+//         left: calc(100% / 2);
+
+//         .two{
+//             left: 0;
+//         } 
+//     }
+
+//     .hero-slide{
+//         height: 400px;
+//     }
+
+//     .our-team {
+
+//         h1{
+//             font-size: 2rem;
+//         }
+
+//         h2{
+//             text-align: center;
+//         }
+
+//         .team{
+//             justify-content: flex-start;
+//             flex-direction: column;
+//         }
+
+//         .leader-profile {
+//             width: 90%;
+//         }
+//     }
+
+//     .footer-div h2{
+//         font-size: 1rem;
+//         font-weight: 400;
+//     }
+// }
+
+
+/* Small devices (portrait tablets and large phones, 300px and up) */
+@media only screen and (max-width: 795px) {
+
+    .landing-page{
+        row-gap: 2rem;
+        min-width: 0;
+        // padding: 0 3rem;
+    }
+
+    .text-slid{
+        width: 100%;
+        padding: 0px 1rem;
+        align-items: center;
+
+        h1{
+            font-size: 1.6rem;
+        }
+
+        h2{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        p {
+            width: 100%;
+            font-size: .9rem;
+            text-align: center;
+        }
+
+    }
+
+    .img-slid{
+        width: 90%;
+        z-index: -1;
+        position: absolute;
+        left: 0rem;
+        filter: opacity(15%);
+
+        .two{
+            left: 0;
+        } 
+    }
+
+    .hero-slide{
+        height: 400px;
+    }
+
+    .about-us{
+        height: fit-content;
+        width: 100%;
+        h1{
+            font-size: 2rem;
+        }
+    }
+
+    .our-team {
+
+        h1{
+            font-size: 2rem;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        .team{
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        .leader-profile {
+            width: 90%;
+        }
+    }
+}
+
+// /* Small devices (portrait tablets and large phones, 375px and up) */
+// @media only screen and (min-width: 320px){
+//     .content-div{
+//         width: 90%;
+//     }
+// }
+
+// @media only screen and (min-width: 375px){
+//     .content-div{
+//         width: 80%;
+//     }
+// }
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 425px){
+//     .content-div{
+//         width: 75%;
+//     }
+// }
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}

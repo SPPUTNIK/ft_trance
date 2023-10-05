@@ -1,0 +1,76 @@
+.history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+
+    .rank {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        // padding: 20px;
+        width: 55%;
+
+        .title-rank {
+            font-size: 52px;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .table-rank {
+            // border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+
+            .clm-first {
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            .clm-last {
+                border-radius: 0px 4px 4px 0px;
+            }
+
+            th.clm-first {
+                width: 0%;
+            }
+
+            th {
+                padding: 12px;
+                color: white;
+                background-color: #18153a5e;
+            }
+
+            td {
+                background-color: rgb(201 210 219 / 36%);
+                color: #18153A;
+                height: 45px;
+            }
+        }
+    }
+
+    .all-matches {
+        width: 40%;
+        row-gap: 10px;
+        .score-match {
+            justify-content: space-around;
+            column-gap: 10px;
+
+            .p-l,
+            .p-r {
+                padding: 4px 0;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #78787842;
+                border-radius: 4px;
+                box-shadow: 0px 0px 8px 0px #18153A;
+                h2 {
+                    background-color: #18153A;
+                    border-radius: 4px;
+                    width: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
